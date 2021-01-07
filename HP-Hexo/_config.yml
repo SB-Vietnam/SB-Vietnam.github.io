@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ホームページ（日本）
+title: ホームページ（Vietnam）
 subtitle: 'モバイル+人工知能+ヒューマンリソース'
 description: '诚信、睿智、勤奋、创新'
 keywords:
 author: Shubin Sun
 email: sunshubin@outlook.it
-company:  <a href="http://www.sb-hrms.com/" title="SB-HiTech Co., Ltd"  target="_blank">SB-HiTech Co., Ltd</a> 
+company:  <a href="https://sbhitech.github.io/about" title="SB-HiTech Co., Ltd"  target="_blank">SB-HiTech Co., Ltd</a> 
+policy:  <a href="https://sbhitech.github.io/policy" title="权责声明"  target="_blank">权责声明</a> 
 language:
   - zh-CN
   - ja
   - en
+  - kr
 # hexo-generator-i18n 选项（可选，默认使用如下设置）
 i18n:
   type: [page, post]
@@ -21,8 +23,8 @@ i18n:
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://sunshubin-japan.github.io/
+## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+url: https://sunshubin-Vietnam.github.io/
 root: /
 permalink: :lang/:category/:title/
 permalink_defaults: 
@@ -60,6 +62,11 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -85,8 +92,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -109,32 +116,6 @@ ignore:
 theme: sb-hitech
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-
-aplayer:
-  asset_inject: false
-  meting: true
-
-douban:
-  user: mythsman
-  builtin: false
-  book:
-    title: 'This is my book title'
-    quote: 'This is my book quote'
-  movie:
-    title: 'This is my movie title'
-    quote: 'This is my movie quote'
-  game:
-    title: 'This is my game title'
-    quote: 'This is my game quote'
-  timeout: 10000 
-
-  
-  error_404:
-  enable: true
-  subtitle: "页面没找到"
-  background:
-
